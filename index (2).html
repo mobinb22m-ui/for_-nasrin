@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>برای نسرین ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+<audio id="bgMusic" loop>
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+
+<div id="hearts"></div>
+
+
+
+
+
+<section id="page0" class="page active">
+
+<h1>
+
+نسرین ❤️
+
+</h1>
+
+<p>
+
+یه سوپرایز دارم برات...
+
+</p>
+
+<button id="startBtn">
+
+شروع ✨
+
+</button>
+
+</section>
+
+
+
+
+
+<section id="page1" class="page">
+
+<h1>
+
+یه سوپرایز دارم برات ❤️
+
+</h1>
+
+<p>
+
+بریم؟
+
+</p>
+
+<div class="buttons">
+
+<button class="yes" id="yes1">ï
+
+آره ❤️
+
+</button>
+
+<button class="no">
+
+نه 🙈
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="page2" class="page">
+
+<h1>
+
+قبلش بهم بگو...
+
+</h1>
+
+<p>
+
+حاضری دورت بگردم؟ 🥹❤️
+
+</p>
+
+<div class="buttons">
+
+<button class="yes" id="yes2">
+
+آره ❤️
+
+</button>
+
+<button class="no">
+
+نه 🙈
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<section id="page3" class="page">
+
+<h1>
+
+حالا که خودت قبول کردی
+
+</h1>
+
+<p>
+
+بوست میکنم 😘❤️
+
+</p>
+
+<div class="buttons">
+
+<button class="yes" id="yes3">
+
+😘❤️
+
+</button>
+
+<button class="no">
+
+نه 🙈
+
+</button>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<section id="page4" class="page">
+
+<h1>
+
+بوس میخواستی زودتر میگفتی بهم خب ❤️
+
+</h1>
+
+<p>
+
+پس یک روزو انتخاب کن
+
+<br>
+
+بریم یک دیت قشنگ 🌹
+
+</p>
+
+<button id="goDate">
+
+انتخاب تاریخ 📅
+
+</button>
+
+</section>
+
+
+
+
+
+
+<section id="page5" class="page">
+    
+
+<h1>
+
+انتخاب تاریخ ❤️
+
+</h1>
+
+<input
+id="datePicker"
+type="text"
+placeholder="تاریخ را انتخاب کن"
+autocomplete="off">
+
+<br><br>
+
+<button id="dateNext">
+
+ادامه ❤️
+
+</button>
+
+</section>
+
+
+
+
+
+
+<section id="page6" class="page">
+
+<h1>
+
+حالا بگو
+
+کجا بریم؟ ❤️
+
+</h1>
+
+<div class="grid">
+
+<button class="place"
+
+data-place="کافه">
+
+☕ کافه
+
+</button>
+
+<button class="place"
+
+data-place="فست فود">
+
+🍔 فست فود
+
+</button>
+
+<button class="place"
+
+data-place="دور دور">
+
+🚗 دور دور
+
+</button>
+
+<button class="place"
+
+data-place="بازی">
+
+🎮 بازی
+
+</button>
+
+</div>
+
+</section>
+<section id="cafePage" class="page">
+
+<h1>
+کدوم نوشیدنی رو دوست داری؟ ☕❤️
+</h1>
+
+<div class="grid">
+
+<button class="choice" data-choice="آیس آمریکانو">
+🧊 آیس آمریکانو
+</button>
+
+<button class="choice" data-choice="آیس لاته">
+🥛 آیس لاته
+</button>
+
+<button class="choice" data-choice="موهیتو">
+🍃 موهیتو
+</button>
+
+<button class="choice" data-choice="شیک شکلات">
+🍫 شیک شکلات
+</button>
+
+<button class="choice" data-choice="آب انبه">
+🥭 آب انبه
+</button>
+
+<button class="choice" data-choice="لیموناد">
+🍋 لیموناد
+</button>
+
+</div>
+
+</section>
+
+
+
+<section id="foodPage" class="page">
+
+<h1>
+چی بخوریم؟ 🍔❤️
+</h1>
+
+<div class="grid">
+
+<button class="choice" data-choice="پیتزا">
+🍕 پیتزا
+</button>
+
+<button class="choice" data-choice="برگر">
+🍔 برگر
+</button>
+
+<button class="choice" data-choice="سوخاری">
+🍗 سوخاری
+</button>
+
+<button class="choice" data-choice="هات داگ">
+🌭 هات داگ
+</button>
+
+<button class="choice" data-choice="ساندویچ">
+🥪 ساندویچ
+</button>
+
+<button class="choice" data-choice="سیب زمینی ویژه">
+🍟 سیب زمینی ویژه
+</button>
+
+</div>
+
+</section>
+
+
+
+<section id="gamePage" class="page">
+
+<h1>
+بازی مورد علاقت چیه؟ 🎮❤️
+</h1>
+
+<div class="grid">
+
+<button class="choice" data-choice="گیم نت">
+🎮 گیم نت
+</button>
+
+<button class="choice" data-choice="شهربازی">
+🎡 شهربازی
+</button>
+
+<button class="choice" data-choice="دارت">
+🎯 دارت
+</button>
+
+<button class="choice" data-choice="بازی کارتی">
+🃏 بازی کارتی
+</button>
+
+</div>
+
+</section>
+
+
+
+<section id="finishPage" class="page">
+
+<h1>
+همه چیز آماده شد ❤️
+</h1>
+
+<div id="resultBox">
+
+<h2>
+خلاصه انتخاب‌های نسرین 🌹
+</h2>
+
+<p id="resultText"></p>
+
+</div>
+
+<p class="finalText">
+
+منتظر اون روز میمونم تا دوباره ببینمت دختر کوچولوم ❤️
+
+</p>
+
+<button id="restartBtn">
+
+منم منتظر اون روزم  ✨
+
+</button>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+<div class="hearts">
+
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💘</span>
+    <span>🤍</span>
+    <span>💞</span>
+
+</div>
+</html>
